@@ -16,22 +16,23 @@
     </div>
     <div id="content">
         <div id="navbar">
-            <a href="index.html">
-                <div id="logo">
+            <a >
+                <div id="logo" data-link="content" style="position: fixed;">
                     <p>SG</p>
                 </div>
             </a>
             <div id="listNav">
                 <ul>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <li> <a class="navLink" data-link="about">About</a></li>
+                    <li><a class="navLink" data-link="work">Work</a></li>
+                    <li> <a class="navLink" data-link="contact">Contact</a></li>
                     <li><button id="resume">Resume</button></li>
                 </ul>
             </div>
             
         </div>
         <div id="main">
+
             <div id="home">
                 <div id="homeBody">
                     <p id="hi">Hi, my name is</p>
@@ -41,10 +42,59 @@
                 </div>
             </div>
             </div>
+
             <div id="about">
                 <div id="abouBody">
                     <div style="display: flex;">
                         <p id="aboutMe">About me</p>
+                        <hr id="hrLine">
+                    </div>
+                    <div id="infoAbout">
+                        Hello! I'm Sahil, an Engineering student at Chandigarh University, who enjoys presenting his ideas using developing skills. I develop android applications and websites with interactive user interface with good features to use.<br><br>
+                        Here are few technologies that I've been worked in my projects and currently using:
+                        <div id="tech">
+                            <ul>
+                                <li>Java</li><br>
+                                <li>C++</li><br>
+                                <li>HTML & CSS</li><br>
+                                <li>Java Script</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <img src="./images/pic1.jpeg" id="profileImg" alt="">
+    
+                </div>
+            </div>
+
+            <div id="work">
+                <div id="abouBody">
+                    <div style="display: flex;">
+                        <p id="aboutMe">My Work</p>
+                        <hr id="hrLine">
+                    </div>
+                    <div id="infoAbout">
+                        Hello! I'm Sahil, an Engineering student at Chandigarh University, who enjoys presenting his ideas using developing skills. I develop android applications and websites with interactive user interface with good features to use.<br><br>
+                        Here are few technologies that I've been worked in my projects and currently using:
+                        <div id="tech">
+                            <ul>
+                                <li>Java</li><br>
+                                <li>C++</li><br>
+                                <li>HTML & CSS</li><br>
+                                <li>Java Script</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <img src="./images/pic1.jpeg" id="profileImg" alt="">
+    
+                </div>
+            </div>
+
+            <div id="contact">
+                <div id="abouBody">
+                    <div style="display: flex;">
+                        <p id="aboutMe">Contact Me</p>
                         <hr id="hrLine">
                     </div>
                     <div id="infoAbout">
@@ -71,4 +121,5 @@
     
     
 </body>
+<script src="./js/index.js"></script>
 </html>

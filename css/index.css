@@ -49,6 +49,7 @@ a {
 #navbar {
   height: 80px;
   padding: 20px;
+  font-size: 22px;
 }
 #logo {
   color: #adb8d6;
@@ -69,7 +70,6 @@ a {
 
 #listNav {
   float: right;
-  color: #adb8d6;
   margin-right: 50px;
 }
 #listNav ul {
@@ -79,10 +79,16 @@ a {
   display: inline;
   margin: 0px 10px;
   cursor: pointer;
+  color: #adb8d6;
+}
+#listNav a
+{
+    color: #adb8d6;
+
 }
 #resume {
   padding: 5px 15px;
-  font-size: 18px;
+  font-size: 22px;
   background-color: #030c23;
   color: #adb8d6;
   border: solid 1px #4da4c6;
@@ -95,7 +101,7 @@ a {
   cursor: pointer;
 }
 #home,
-#about {
+#about ,#work,#contact{
   padding: 150px 0px 150px 500px;
 }
 #hi {
