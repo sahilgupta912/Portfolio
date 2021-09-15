@@ -5,6 +5,47 @@ body {
 a {
   text-decoration: none;
 }
+
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+  }
+  .linkedin {
+    background: #007bb5;
+  }
+  .instagram {
+    background: #6d1f33;
+  }
+  .github {
+    background: #17171c;
+  }
+  
+  #content
+  {
+      margin-left: 30px;
+  }
+
 #navbar {
   height: 80px;
   padding: 20px;
