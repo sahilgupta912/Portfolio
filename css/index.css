@@ -7,50 +7,49 @@ a {
 }
 
 .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 20px;
-    transition:all 0.3s ease;
-    color: white;
-    font-size: 20px;
-    width: 20px;
-  }
-  
-  .icon-bar a:hover {
-    background-color: #000;
-    width: 50px;
-    border-top-right-radius: 20px;
-    border-end-end-radius: 20px;
-  }
-  
-  .facebook {
-    background: #3B5998;
-    border-top-right-radius: 20px;
-  }
-  .linkedin {
-    background: #007bb5;
-  }
-  .instagram {
-    background: #6d1f33;
-  }
-  .github {
-    background: #17171c;
-    border-end-end-radius: 20px;
-  }
-  
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  transition:all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  width: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-end-end-radius: 20px;
+}
+
+.facebook {
+  background: #3B5998;
+  border-top-right-radius: 20px;
+}
+.linkedin {
+  background: #007bb5;
+}
+.instagram {
+  background: #6d1f33;
+}
+.github {
+  background: #17171c;
+  border-end-end-radius: 20px;
+}
 
 #navbar {
   height: 80px;
   padding: 20px;
-  font-size: 22px;
+  font-size: 26px;
   background-color: #010716;
   opacity: 0.9;
   position: fixed;
@@ -106,23 +105,21 @@ a {
   color: #030c23;
   cursor: pointer;
 }
-#home,#work,#contact{
-  height: 600px;
-  width: 70%;
-  margin: auto;
-  padding: 200px 0px;
+#home{
+  display: flex;
+  padding: 200px;
 }
-#about
+#about,#skills,#work,#contact
 {
-    height: 600px;
-    width: 70%;
-    margin: auto;
-    padding: 200px 0;
+  padding: 200px;
 }
-#hi {
+#aboutDiv,#skillsBody,#workBody,#contactBody
+{
+  display: flex;
+}
+#hi{
   color: #4da4c6;
   font-size: 26px;
-  margin-top: 150px;
 }
 #name {
   color: #b7c3e2;
@@ -130,16 +127,19 @@ a {
   line-height: 1%;
   font-weight: bold;
 }
-#infoHome1
-{
-    float: left;
-}
 #infoHome {
   color: #adb8d6;
-  width: 700px;
   word-spacing: 5px;
   font-family:'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 28px;
+}
+#infoHome1
+{
+  flex: 2;
+}
+#homeImgDiv
+{
+  flex: 1;
 }
 #touch ,#resume{
   background-color: #030c23;
@@ -156,38 +156,34 @@ a {
   color: #030c23;
   cursor: pointer;
 }
-#aboutMe,#myWork {
-  font-size: 40px;
-  color: #96a6d1;
+#aboutMe,#myWork,#myExpertise,#myJourney,#contactMe{
+  font-size: 60px;
+  color: #819adb;
   font-weight: bold;
+  
 }
-#hrLine {
-  margin-top: 65px;
-  margin-left: 20px;
-  height: 0;
-  width: 80%;
-  border-top: 1px;
-  color: #273c75;
-}
-#infoAbout,#infoWork {
+#infoAbout,#infoWork{
   color: #adb8d6;
   width: 60%;
   word-spacing: 5px;
   font-family:'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 28px;
   margin: 0px 40px;
-  float: left;
+}#infoSkills{
+  color: #adb8d6;
+  width: 60%;
+  word-spacing: 5px;
+  font-family:'Times New Roman', Times, serif;
+  margin: 0px 40px;
 }
-#tech ul {
-  list-style: url("https://img.icons8.com/office/16/000000/arrow.png");
-  color: #7d90c1;
-}
-#homeImg
+#infoSkills img
 {
-    width:400px;
-    height: 600px;
-    margin-left: 100px;
-    border-radius: 30px;
+  height: 50px;
+  margin: 10px;
+}
+#skillSvg
+{
+  width: 40%;
 }
 #aboutDetails ul
 {
@@ -198,6 +194,7 @@ a {
 {
     margin-bottom: 30px;
     letter-spacing: 1px;
+    font-size: 22px;
 }
 #interest
 {
@@ -208,6 +205,7 @@ a {
     font-size: 28px;
     margin-left: 20px;
     font-weight: bold;
+    color: #819adb;
 }
 #interest ul
 {
@@ -218,6 +216,16 @@ a {
 {
     display: inline;
     margin: 0px 30px;
+}
+#line,#lineExpertise{
+  margin-top: 95px;
+  height: 0;
+  width: 80%;
+  border-top: 1px;
+}
+#lineExpertise
+{
+  width: 75%;
 }
 #projects ul
 {
@@ -246,4 +254,249 @@ a {
     background-color: #010716;
     cursor: pointer;
     box-shadow: 1px 1px 5px #007bb5;
+}
+
+#contactImg
+{
+    width: 40%;
+}
+#infoContact
+{
+    width: 600px;
+    float: left;
+    margin-left: 100px;
+}
+#infoContact form input
+{
+    margin: 20px ;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 80%;
+    color: #3a3a3a;
+    background-color: #d1d1d1;
+}
+#infoContact form button
+{
+    width: 80%;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #007bb5;
+    background-color: #030c23;
+    color: #adb8d6;
+}
+#infoContact form button:hover
+{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #007bb5;
+}
+@media (max-width:480px) {
+  #content
+  {
+    margin: 0px 20px;
+  }
+  #logo {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0px 15px;
+    margin-left: -10px;
+    float: left;
+  }
+  #navbar {
+    height: 60px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #010716;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+  }
+  #listNav {
+    float: right;
+    margin-right: 30px;
+  }
+  #listNav li {
+    margin: 0px 5px;
+    cursor: pointer;
+    color: #adb8d6;
+    font-weight: bold;
+  }
+  #hi
+  {
+    font-size: 18px;
+  }
+  #name
+  {
+    font-size: 40px;
+  }
+  #home
+  {
+    display: flex;
+    padding:200px 0px 100px 0px;
+  }
+  #about,#skills,#work,#contact
+  {
+    padding: 100px 0px;
+  }
+  #aboutDiv,#skillsBody,#contactBody
+  {
+    display: block;
+  }
+  #homeImg
+  {
+    width: 100px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  #infoHome
+  {
+    font-size: 22px;
+  }
+  #touch ,#resume{
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 10px 5px;
+  }
+  .icon-bar {
+    top: 98%;
+    left: 25%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display:  inline;
+    margin: -5px;
+  }
+  .facebook {
+    background: #3B5998;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+  .github {
+    background: #17171c;
+    border-top-right-radius: 20px;
+    border-end-end-radius: 0px;
+  }
+  .icon-bar a:hover {
+    background-color: #000;
+    width: 50px;
+    border-top-right-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+  #aboutMe,#myWork,#myExpertise,#myJourney,#contactMe{
+    font-size: 30px;
+    color: #96a6d1;
+    font-weight: bold;
+  }
+  #infoAbout,#infoWork,#infoSkills{
+    font-size: 22px;
+    margin: 0px 10px;
+    width: 100%;
+  }
+  #aboutDetails ul
+  {
+      color: #adb8d6;
+      list-style-type: none;
+      margin-left: -20px;
+  }
+  #aboutDetails ul li
+  {
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      font-size: 20px;
+  }
+  #aboutDetails img
+  {
+    width: 20px;
+  }
+  #interest p
+  {
+      font-size: 24px;
+      margin-left: 0px;
+  }
+  #interest ul
+  {
+      list-style-type: none;
+      font-size: 23px;
+      margin-left: -30px;
+  }
+  #interest ul li
+  {
+    float: left;
+    margin-top: 10px;
+  }
+  #interest img
+  {
+    width: 20px;
+    margin-right: 5px;
+  }
+  #line
+  {
+    width: 50%;
+    margin-top: 45px;
+  }
+  #infoSkills img{
+    height: 35px;
+    margin: 3px;
+  }
+  #skillSvg
+  {
+    display: none;
+  }
+  #lineExpertise
+  {
+    width: 42%;
+    margin-top: 45px;
+  }
+  #projects ul
+  {
+    margin-left: -40px;
+  }
+  #projects ul li
+  {
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #08122b;
+  }
+  #projects p
+  {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+  }
+  #project img
+  {
+      height: 100px;
+      width: 220px; 
+      border-radius: 20px;
+      padding: 0px 10px;
+  }
+  #infoContact
+  {
+    width: 100%;
+    margin: 0;
+  }
+  #infoContact form input
+  {
+      margin: 20px ;
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 10px;
+      width: 80%;
+      color: #3a3a3a;
+      background-color: #d1d1d1;
+  }
+  #contactImg
+  {
+    display: none;
+  }
+  #infoContact form button
+  {
+    margin-bottom: 70px;
+  }
 }

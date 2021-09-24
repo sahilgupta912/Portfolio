@@ -8,114 +8,139 @@
     <title>Document</title>
 </head>
 <body>
+
     <div class="icon-bar">
         <a href="https://www.facebook.com/guptasahil001/" class="facebook"><i class="fa fa-facebook"></i></a> 
         <a href="https://www.linkedin.com/in/sahil-gupta912/" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://www.instagram.com/sahil_gupta912/" class="instagram"><i class="fa fa-instagram"></i></a> 
         <a href="https://github.com/sahilgupta912" class="github"><i class="fa fa-github"></i></a>
     </div>
+    <div id="navbar">
+        <a >
+            <div id="logo" data-link="content" style="position: fixed;">
+                <p>SG</p>
+            </div>
+        </a>
+        <div id="listNav">
+            <ul>
+                <li> <a class="navLink" data-link="about">About</a></li>
+                <li> <a class="navLink" data-link="skills">Skills</a></li>
+                <li><a class="navLink" data-link="work">Work</a></li>
+                <li> <a class="navLink" data-link="contact">Contact</a></li>
 
+
+                <li></li>
+            </ul>
+        </div>
+        
+    </div>
     <div id="content">
 
-        <div id="navbar">
-            <a >
-                <div id="logo" data-link="content" style="position: fixed;">
-                    <p>SG</p>
-                </div>
-            </a>
-            <div id="listNav">
-                <ul>
-                    <li> <a class="navLink" data-link="about">About</a></li>
-                    <li><a class="navLink" data-link="work">Work</a></li>
-                    <li> <a class="navLink" data-link="contact">Skills</a></li>
-                    <li> <a class="navLink" data-link="contact">Certification</a></li>
-                    <li> <a class="navLink" data-link="contact">Contact</a></li>
 
-                    <li></li>
-                </ul>
-            </div>
-            
-        </div>
+
+
 
         <div id="home">
-            <div id="homeBody">
                 <div id="infoHome1">
                     <p id="hi">Hi, my name is</p>
                     <p id="name">Sahil Gupta.</p>
                     <p id="infoHome">Solving real-life problems and building something around opportunities I discover, is what I am truly
                         motivated by.</p>
-                    <button id="touch">Get In Touch</button>
-                    <a href="https://drive.google.com/file/d/1UtsUmuN6LTc4O2yEjGCfMydB6mZE5qBj/view?usp=sharing"><button id="resume">  Resume</button></a>
+                    <div id="buttons">
+                        <button id="touch" data-link="contact">Get In Touch</button>
+                        <a href="https://drive.google.com/file/d/1UtsUmuN6LTc4O2yEjGCfMydB6mZE5qBj/view?usp=sharing"><button id="resume">  Resume</button></a>
+                    </div>
+                </div>
+                <div id="homeImgDiv">
+                    <img src="./images/pic2.png" id="homeImg" alt="">
 
                 </div>
-                <img src="./images/pic2.png" id="homeImg" alt="">
-
-
-            </div>
-        </div>
-
+        </div> 
         <div id="about">
-            <div id="abouBody">
-                <div style="display: flex;">
-                    <p id="aboutMe">About Me</p>
-                    <hr id="hrLine">
-                </div><br>
+            <div id="aboutMe" style="display: flex;">
+                <p>About Me</p>
+                <hr id="line">
+            </div>
+            <div id="aboutDiv">
                 <div id="infoAbout">
                     Hello! I'm Sahil, currently an Engineering student at Chandigarh University, a programmer and a developer who enjoys presenting his ideas using his developing skills. I develop android applications and websites with interactive user interface and good features to interact with.<br><br>
                 </div>
-                    <!--
-                    Here are few technologies that I've been worked in my projects and currently using:
-                    <div id="tech">
-                        <ul>
-                            <li>Java</li><br>
-                            <li>C++</li><br>
-                            <li>HTML & CSS</li><br>
-                            <li>Java Script</li>
-                        </ul>
-
-                    </div>
-                -->
+                    
                 <div id="aboutDetails">
                     <ul>
-                        <li><img src="https://img.icons8.com/ios-filled/25/ffffff/phone.png"/> &ensp;Phone &ensp;&ensp;&ensp;&ensp;: &ensp; +91 7015179844</li>
-                        <li><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/25/ffffff/external-email-interface-kiranshastry-lineal-kiranshastry-1.png"/> &ensp;Email &ensp;&ensp;&ensp;&ensp; : &ensp; sahilgupta912@gmail.com</li>
-                        <li><img src="https://img.icons8.com/external-those-icons-fill-those-icons/25/ffffff/external-location-maps-and-locations-those-icons-fill-those-icons-6.png"/> &ensp;Location &ensp;&ensp;: &ensp; Haryana</li>
+                        <li><img src="https://img.icons8.com/ios-filled/25/ffffff/phone.png"/> &ensp;Phone : +91 7015179844</li>
+                        <li><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/25/ffffff/external-email-interface-kiranshastry-lineal-kiranshastry-1.png"/> &ensp;Email : sahilgupta912@gmail.com</li>
+                        <li><img src="https://img.icons8.com/external-those-icons-fill-those-icons/25/ffffff/external-location-maps-and-locations-those-icons-fill-those-icons-6.png"/> &ensp;Location : Haryana</li>
                     </ul>
-                </div><br><br>
-                <div id="interest">
-                    <p>My Interests</p>
-                    <ul>
-                        <li><img src="https://img.icons8.com/material-outlined/25/ffffff/headphones.png"/> Music & Guitar</li>
-                        <li><img src="https://img.icons8.com/material-outlined/25/ffffff/movie.png"/> Web series</li>
-                        <li><img src="https://img.icons8.com/material-outlined/25/ffffff/controller.png"/> Games</li>
-                    </ul>
+                </div>
+
+            </div>
+            <div id="interest">
+                <p>My Interests</p>
+                <ul>
+                    <li><img src="https://img.icons8.com/material-outlined/25/ffffff/headphones.png"/> Music & Guitar</li>
+                    <li><img src="https://img.icons8.com/material-outlined/25/ffffff/movie.png"/> Web series</li>
+                    <li><img src="https://img.icons8.com/material-outlined/25/ffffff/controller.png"/> Games</li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+        <div id="skills">
+            <div style="display: flex;">
+                <p id="myExpertise">My Expertise</p>
+                <hr id="lineExpertise" >
+            </div>
+            <div id="skillsBody">
+
+                <div id="infoSkills">
+                        <p><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                        
+                        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+
+                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
+
+                        <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+
+                        <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
+
+                        <img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+
+                        <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VScode">
+
+                        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+
+                        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+
+                        <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></p>
 
                 </div>
-                
+                <img src="./images/skills.svg" alt="" id="skillSvg">
 
             </div>
         </div>
-
         <div id="work">
+            <div style="display: flex;">
+                <p id="myWork">My Work</p>
+                <hr id="line">
+            </div>
             <div id="workBody">
-                <div style="display: flex;">
-                    <p id="myWork">My Work</p>
-                    <hr id="hrLine">
-                </div>
-                <div id="infoWork">
-                    Here are my work/projects that I've been worked on:
-                </div><br>
+
                 <div id="projects">
                     <ul>
                         <li id="project">
                             <a href="https://github.com/sahilgupta912/Covid-19-Tracker">
-                            
+
                             <div style="float: left; width: 80%;">
 
                                 <p style="font-size: 25px; color:#cbd4ed;  ">Covid-19 cases tracker</p>
                                 
                                 <p style="font-size: 23px; color: #adb8d6;">This is an anroid application build with the help of Android Studio which shows the count of the active cases, recovered cases, death in text formant and in pie chart from all over the India and statewise too. </p>
-
                             </div>
                             
                             <img src="./images/covid.jpeg" alt="">
@@ -156,28 +181,30 @@
         </div>
 
         <div id="contact">
-            <div id="abouBody">
-                <div style="display: flex;">
-                    <p id="aboutMe">Contact Me</p>
-                    <hr id="hrLine">
-                </div>
-                <div id="infoAbout">
-                    Hello! I'm Sahil, an Engineering student at Chandigarh University, who enjoys presenting his ideas using developing skills. I develop android applications and websites with interactive user interface with good features to use.<br><br>
-                    Here are few technologies that I've been worked in my projects and currently using:
-                    <div id="tech">
-                        <ul>
-                            <li>Java</li><br>
-                            <li>C++</li><br>
-                            <li>HTML & CSS</li><br>
-                            <li>Java Script</li>
-                        </ul>
+            <div style="display: flex;">
+                <p id="contactMe">Contact Me</p>
+                <hr id="lineExpertise">
+            </div>
+            <div id="contactBody">
 
-                    </div>
+
+                <div id="infoContact">
+                    <form action="https://formsubmit.co/sahilgupta912@gmail.com" method="POST">
+                        <input type="text" placeholder="Your Name..." required name="Name"><br>
+                        <input type="email" placeholder="Your Email..." required name="Email"><br>
+                        <input type="text" placeholder="Subject..." required name="Subject"><br>
+                        <input type="text" placeholder="Message..." style="height: 150px;" required name="Message"><br>
+                        <input type="hidden" name="_subject" value="New Message!!!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Submit</button>
+                    </form>
+                    
                 </div>
+                <img src="./images/contact.svg" alt="" id="contactImg">
+
 
             </div>
         </div>
-    
     </div>
     
     

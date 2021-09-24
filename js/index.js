@@ -14,3 +14,10 @@ l.addEventListener("click",()=>
     let e=document.getElementById(l.getAttribute("data-link"));
     e.scrollIntoView({behavior:"smooth",block:"start"});
 })
+
+const cont=document.getElementById("touch");
+cont.addEventListener("click",()=>
+{
+    let e=document.getElementById(cont.getAttribute("data-link"));
+    e.scrollIntoView({behavior:"smooth",block:"start"});
+})
