@@ -124,7 +124,6 @@ a {
 #name {
   color: #b7c3e2;
   font-size: 70px;
-  line-height: 1%;
   font-weight: bold;
 }
 #infoHome {
@@ -249,6 +248,14 @@ a {
     margin: auto;
     padding: 0px 10px;
 }
+#project p
+{
+  color: #cbd4ed;
+}
+#projectHead
+{
+  font-size: 25px;
+}
 #project:hover
 {
     background-color: #010716;
@@ -353,7 +360,7 @@ a {
   }
   #infoHome
   {
-    font-size: 22px;
+    font-size: 18px;
   }
   #touch ,#resume{
     padding: 10px 15px;
@@ -389,12 +396,12 @@ a {
     border-end-end-radius: 0px;
   }
   #aboutMe,#myWork,#myExpertise,#myJourney,#contactMe{
-    font-size: 30px;
+    font-size: 25px;
     color: #96a6d1;
     font-weight: bold;
   }
   #infoAbout,#infoWork,#infoSkills{
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px 10px;
     width: 100%;
   }
@@ -408,7 +415,7 @@ a {
   {
       margin-bottom: 30px;
       letter-spacing: 1px;
-      font-size: 20px;
+      font-size: 13px;
   }
   #aboutDetails img
   {
@@ -422,7 +429,7 @@ a {
   #interest ul
   {
       list-style-type: none;
-      font-size: 23px;
+      font-size: 15px;
       margin-left: -30px;
   }
   #interest ul li
@@ -483,11 +490,11 @@ a {
   }
   #infoContact form input
   {
-      margin: 20px ;
-      padding: 15px;
-      font-size: 20px;
+      margin: 5px ;
+      padding: 10px;
+      font-size: 17px;
       border-radius: 10px;
-      width: 80%;
+      width: 90%;
       color: #3a3a3a;
       background-color: #d1d1d1;
   }
